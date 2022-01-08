@@ -1,0 +1,53 @@
+.header {
+  @apply mt-2 fixed inset-0;
+}
+.header #logo {
+  @apply mt-4 fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+.header #logo.logo-mobile {
+  @apply left-4 sm:left-10;
+  top: 0;
+  transform: translate(0, 0);
+}
+.header #logo img {
+  width: 100px;
+}
+
+.header .nav-link {
+  @apply font-bold text-lg w-fit my-1;
+  position: relative;
+}
+
+.header .nav-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: (-50%, 0);
+  background: rgb(5 104 59);
+  transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+}
+.header .nav-link:hover::after {
+  left: 0;
+  width: 100%;
+}
+
+.header button.controller {
+  @apply visible md:hidden right-4 sm:right-10;
+  position: absolute;
+  top: 25px;
+}
+.header .bars,
+.header .times {
+  color: rgb(5 104 59);
+  font-size: 1.6rem;
+}
