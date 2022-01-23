@@ -49,9 +49,9 @@ function Header() {
   return (
     <header className="header py-5">
       <NavLink to="/" id="logo" className={mobile ? "logo-mobile" : ""}>
-        <img src="./assets/images/july.png" alt="" />
+        <img src="https://d2652gz3oy7d9s.cloudfront.net/Logo/july.png" alt="" />
       </NavLink>
-      <div className="container mx-auto">
+      <div className="container mx-auto bg-white w-full rounded-b-lg">
         <nav
           className={
             "grid mt-10 md:mt-0 grid-cols-1 md:grid-cols-5 lg:px-24 xl:px-44 place-items-center" +

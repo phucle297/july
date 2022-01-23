@@ -1,5 +1,5 @@
 .header {
-  @apply mt-2 fixed inset-0;
+  @apply fixed inset-0 h-20 w-full z-10 bg-white;
 }
 .header #logo {
   @apply mt-4 fixed;

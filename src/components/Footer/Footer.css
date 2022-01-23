@@ -1,3 +1,29 @@
 .footer {
   background-color: #033f22;
 }
+a.footer-nav-link,
+footer-nav-link {
+  @apply text-white w-fit relative hover:text-white;
+}
+a.footer-nav-link:hover {
+  color: white !important;
+}
+.footer-nav-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: (-50%, 0);
+  background: white;
+  transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+}
+.footer-nav-link:hover::after {
+  width: 100%;
+  left: 0;
+}

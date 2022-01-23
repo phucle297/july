@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 0.95rem;
 }
 h1,
 h2,
@@ -31,4 +32,9 @@ i {
 a:hover,
 a:active {
   color: rgb(5 104 59) !important;
+}
+
+i,
+svg {
+  @apply mx-2 text-white text-lg;
 }
