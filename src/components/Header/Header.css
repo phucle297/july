@@ -16,8 +16,11 @@
   width: 100px;
 }
 
-.header .nav-link {
+.header .nav-link,
+.header .ant-dropdown-trigger,
+.header-nav-link {
   @apply font-bold text-lg w-fit my-1;
+  font-family: "EB Garamond", serif;
   position: relative;
 }
 

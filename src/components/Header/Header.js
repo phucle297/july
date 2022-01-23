@@ -5,12 +5,20 @@ import "./Header.css";
 const menu = (
   <Menu>
     <Menu.Item key="1">
-      <NavLink to="/apartment" rel="noopener noreferrer">
+      <NavLink
+        to="/apartment"
+        rel="noopener noreferrer"
+        className="header-nav-link text-sm"
+      >
         Căn hộ cho thuê
       </NavLink>
     </Menu.Item>
     <Menu.Item key="2">
-      <NavLink to="/yoga" rel="noopener noreferrer">
+      <NavLink
+        to="/yoga"
+        rel="noopener noreferrer"
+        className="header-nav-link text-sm"
+      >
         Yoga
       </NavLink>
     </Menu.Item>
@@ -58,7 +66,7 @@ function Header() {
           <Space direction="vertical" className="nav-link col-span-1">
             <Space wrap>
               <Dropdown overlay={menu} placement="bottomCenter">
-                <a>Dịch vụ</a>
+                <a className="">Dịch vụ</a>
               </Dropdown>
             </Space>
           </Space>

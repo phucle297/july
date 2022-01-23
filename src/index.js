@@ -1,13 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import store from "./redux/configStore";
+import { Provider } from "react-redux";
+import "../node_modules/slick-carousel/slick/slick.css";
+import "../node_modules/slick-carousel/slick/slick-theme.css";
+//! Because of react-script was upgraded to 5.0.0, import "antd/dist/antd.css" will cause error, so we need to import "antd/dist/antd.min.css" instead.
+import "antd/dist/antd.min.css";
+import "./index.css";
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={store}>
     <App />
-  </React.StrictMode>,
+  </Provider>,
   document.getElementById("root")
 );
 

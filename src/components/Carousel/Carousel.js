@@ -1,7 +1,7 @@
-import React, { Fragment, memo, useEffect } from "react";
+import React, { Fragment, memo } from "react";
 import Slider from "react-slick";
 import "./Carousel.css";
-import { useDispatch, useSelector } from "react-redux";
+// import { useDispatch, useSelector } from "react-redux";
 
 const PrevArrow = (props) => {
   const { onClick } = props;
@@ -65,6 +65,7 @@ function Carousel(props) {
   return (
     <Fragment>
       <Slider {...settings}>{renderCarousel()}</Slider>
+      <div className=" h-96"></div>
     </Fragment>
   );
 }
