@@ -235,9 +235,9 @@ module.exports = {
       padding: {
         DEFAULT: "0.5rem",
         sm: "1rem",
-        lg: "2rem",
-        xl: "3rem",
-        "2xl": "4rem",
+        lg: "1.5rem",
+        xl: "2rem",
+        "2xl": "2.5rem",
       },
     },
     content: {

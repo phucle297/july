@@ -4,8 +4,15 @@
 .yoga-carousel .divider {
   /* content: ""; */
   display: inline-block;
-  width: 60%;
+
   margin: 0 auto;
   height: 1px;
   background-color: black;
+}
+
+.ant-divider-horizontal.ant-divider-with-text-left::before {
+  width: 0;
+}
+.yoga-carousel .ant-divider-inner-text {
+  padding: 0 !important;
 }
