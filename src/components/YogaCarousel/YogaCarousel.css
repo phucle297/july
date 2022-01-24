@@ -1,0 +1,11 @@
+.yoga-carousel {
+  margin-top: 12vh !important;
+}
+.yoga-carousel .divider {
+  /* content: ""; */
+  display: inline-block;
+  width: 60%;
+  margin: 0 auto;
+  height: 1px;
+  background-color: black;
+}

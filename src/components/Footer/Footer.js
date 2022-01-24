@@ -10,27 +10,12 @@ import { NavLink } from "react-router-dom";
 export default function Footer() {
   const [mapWidth, setMapWidth] = React.useState(350);
   const [mapHeight, setMapHeight] = React.useState(180);
-  window.onload = () => {
-    if (window.innerWidth < 375) {
-      setMapWidth(250);
-    } else if (window.innerWidth < 540) {
-      setMapWidth(280);
-    } else if (window.innerWidth < 768) {
-      setMapWidth(300);
-    } else if (window.innerWidth < 821) {
-      setMapWidth(550);
-      setMapHeight(250);
-    } else if (window.innerWidth < 1025) {
-      setMapWidth(200);
-      setMapHeight(180);
-    } else {
-      setMapWidth(350);
-      setMapHeight(250);
-    }
-  };
+
   useEffect(() => {
-    window.onresize = () => {
-      if (window.innerWidth < 375) {
+    window.onload = () => {
+      if (window.innerWidth < 300) {
+        setMapWidth(200);
+      } else if (window.innerWidth < 375) {
         setMapWidth(250);
       } else if (window.innerWidth < 540) {
         setMapWidth(280);
@@ -40,14 +25,31 @@ export default function Footer() {
         setMapWidth(550);
         setMapHeight(250);
       } else if (window.innerWidth < 1025) {
-        setMapWidth(200);
-        setMapHeight(180);
+        setMapWidth(550);
+        setMapHeight(250);
       } else {
         setMapWidth(350);
         setMapHeight(250);
       }
     };
-  }, [window.innerWidth]);
+    window.onresize = () => {
+      if (window.innerWidth < 300) {
+        setMapWidth(200);
+      } else if (window.innerWidth < 375) {
+        setMapWidth(250);
+      } else if (window.innerWidth < 540) {
+        setMapWidth(280);
+      } else if (window.innerWidth < 768) {
+        setMapWidth(300);
+      } else if (window.innerWidth < 1023) {
+        setMapWidth(550);
+        setMapHeight(250);
+      } else {
+        setMapWidth(250);
+        setMapHeight(250);
+      }
+    };
+  }, [mapWidth, mapHeight]);
   return (
     <footer className="footer">
       <div className="container mx-auto">
@@ -62,14 +64,13 @@ export default function Footer() {
             <p className="text-white px-8 lg:px-7 text-center">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Voluptates, error ipsum, dolor possimus totam repudiandae adipisci
-              magnam laborum eum laboriosam voluptatem deleniti aperiam,
             </p>
           </div>
           <div className="col-span-1 mt-6 px-7 lg:px-1 lg:mt-9">
             <h3 className="text-3xl font-bold text-white text-center h-12 lg:h-14 lg:mt-4">
               Sản phẩm
             </h3>
-            <div className="flex flex-col lg:px-14 items-center justify-center">
+            <div className="flex flex-col lg:pl-12 xl:pl-20 items-center justify-center lg:items-start">
               <NavLink to="/apartment" className="footer-nav-link">
                 Căn hộ cho thuê
               </NavLink>
@@ -91,15 +92,15 @@ export default function Footer() {
                 <div className=" my-1.5">
                   <a href="tel:02363773377" className="flex ">
                     <PhoneOutlined className="text-white mt-0.5" />
-                    <a className="text-white footer-nav-link">0236 3773 377</a>
+                    <p className="text-white footer-nav-link">0236 3773 377</p>
                   </a>
                 </div>
                 <div className=" my-1.5">
                   <a href="mailto:julygroups53@gmail.com" className="flex ">
                     <MailOutlined className="text-white mt-0.5" />
-                    <a className="text-white footer-nav-link">
+                    <p className="text-white footer-nav-link">
                       julygroups53@gmail.com
-                    </a>
+                    </p>
                   </a>
                 </div>
                 <div className=" my-1.5 flex">

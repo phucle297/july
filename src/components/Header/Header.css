@@ -1,5 +1,6 @@
 .header {
-  @apply fixed inset-0 h-20 w-full z-10 bg-white;
+  @apply fixed inset-0 h-20 w-full z-10;
+  background-color: #f4ede6;
 }
 .header #logo {
   @apply mt-4 fixed;
@@ -15,13 +16,19 @@
 .header #logo img {
   width: 100px;
 }
-
+.header .logo-layout {
+  left: 15% !important;
+}
 .header .nav-link,
-.header .ant-dropdown-trigger,
-.header-nav-link {
-  @apply font-bold text-lg w-fit my-1;
+.header .ant-dropdown-trigger {
+  font-size: 1.125rem;
+  width: fit-content;
+  line-height: 1.75rem;
+  font-weight: 700 !important;
   font-family: "EB Garamond", serif;
   position: relative;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
 }
 
 .header .nav-link::after {
@@ -53,4 +60,8 @@
 .header .times {
   color: rgb(5 104 59);
   font-size: 1.6rem;
+}
+.ant-dropdown-menu-item:hover,
+.ant-dropdown-menu-submenu-title:hover {
+  background-color: rgb(244, 237, 230);
 }

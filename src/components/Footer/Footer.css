@@ -2,7 +2,7 @@
   background-color: #033f22;
 }
 a.footer-nav-link,
-footer-nav-link {
+.footer-nav-link {
   @apply text-white w-fit relative hover:text-white;
 }
 a.footer-nav-link:hover {

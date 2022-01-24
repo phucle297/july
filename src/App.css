@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Licorice&family=Noto+Serif:wght@400;700&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Licorice&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&display=swap");
 * {
   margin: 0;
@@ -12,7 +14,6 @@ h3,
 h4,
 h5,
 h6 {
-  /* font-family: "Noto Serif", serif; */
   font-family: "EB Garamond", serif;
 }
 
@@ -21,11 +22,10 @@ a,
 span,
 li,
 b,
-small,
-i {
-  font-family: "Source Sans Pro", sans-serif;
+small {
+  font-family: "Be Vietnam Pro", sans-serif;
 }
-#handwritten {
+#hand-written {
   font-family: "Licorice", cursive;
 }
 
