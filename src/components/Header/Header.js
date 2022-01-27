@@ -4,7 +4,7 @@ import React, { memo, useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Header.css";
 const menu = (
-  <Menu style={{ backgroundColor: "#f4ede6" }}>
+  <Menu style={{ backgroundColor: "white" }}>
     <Menu.Item key="0">
       <NavLink
         rel="noopener noreferrer"
@@ -34,7 +34,7 @@ const menu = (
   </Menu>
 );
 
-function Header() {
+function Header(props) {
   const [navbarOpen, setNavbarOpen] = useState(false);
   const [layout, setLayout] = useState(false);
   useEffect(() => {
@@ -61,7 +61,16 @@ function Header() {
           type="button"
           onClick={() => setNavbarOpen(!navbarOpen)}
         >
-          <i className="fas fa-bars text-gray-900"></i>
+          <i
+            className={
+              "fas fa-bars text-gray-900" + (navbarOpen ? " hidden" : " block")
+            }
+          ></i>
+          <i
+            className={
+              "fas fa-times text-gray-900" + (navbarOpen ? " block" : " hidden")
+            }
+          ></i>
         </button>
       </div>
       <div
@@ -75,7 +84,7 @@ function Header() {
             "grid mt-5 z-20 md:mt-0 grid-cols-1 md:grid-cols-5 lg:px-24 xl:px-44 place-items-center w-full" +
             (navbarOpen ? " shadow-lg rounded-b-lg " : " ")
           }
-          style={{ backgroundColor: "#f4ede6" }}
+          style={{ backgroundColor: "white" }}
         >
           <NavLink to="/" className="nav-link col-span-1">
             Trang chủ

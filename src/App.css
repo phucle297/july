@@ -15,8 +15,16 @@ h4,
 h5,
 h6 {
   font-family: "EB Garamond", serif;
+  color: #3f3a64;
 }
-
+button,
+a {
+  cursor: pointer;
+  transition: all 0.3s ease !important;
+  -o-transition: all 0.3s ease !important;
+  -moz-transition: all 0.3s ease !important;
+  -webkit-transition: all 0.3s ease !important;
+}
 p,
 a,
 span,
@@ -37,4 +45,10 @@ a:active {
 i,
 svg {
   @apply mx-2 text-white text-lg;
+}
+
+.button-primary,
+a.button-primary {
+  @apply text-lg font-medium flex items-center justify-center bg-green-700 hover:bg-green-800 hover:text-white  pl-6 pr-3 py-2 tracking-wide rounded-lg;
+  color: white !important;
 }

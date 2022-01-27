@@ -1,6 +1,6 @@
 .header {
   @apply fixed inset-0 h-20 w-full z-10;
-  background-color: #f4ede6;
+  background-color: white;
 }
 .header #logo {
   @apply mt-4 fixed;
@@ -55,6 +55,15 @@
   @apply visible md:hidden right-4 sm:right-10;
   position: absolute;
   top: 25px;
+}
+.header i.fa-bars,
+.header i.fa-times {
+  padding: 5px;
+  color: white !important;
+  background: rgb(21 128 61) !important;
+  border-radius: 4px;
+  width: 28px;
+  height: 28px;
 }
 .header .bars,
 .header .times {
