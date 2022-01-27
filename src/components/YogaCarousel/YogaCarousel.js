@@ -13,11 +13,9 @@ export default function YogaCarousel() {
                 <Divider orientation="left">
                   <span
                     className="font-bold text-5xl tracking-wide"
-                    // style={{ color: "rgba(0, 108, 54, 1)" }}
                     style={{ color: "rgb(55 50 86)" }}
                   >
-                    {/* July Yoga */}
-                    JULY YOGA
+                    July Yoga
                   </span>
                 </Divider>
               </div>
@@ -44,25 +42,15 @@ export default function YogaCarousel() {
             <div className="col-span-1 px-5 flex items-center flex-col lg:col-span-3">
               <div className="grid grid-cols-1 place-items-center">
                 <img
-                  className=" col-start-1 row-start-1"
+                  className="pattern col-start-1 row-start-1"
                   src="https://d2652gz3oy7d9s.cloudfront.net/Layout/pattern.png"
                   alt=""
-                  style={{
-                    height: "550px",
-                    width: "550px",
-                  }}
                 />
                 <img
-                  className=" col-start-1 row-start-1 rounded-full"
-                  // src="https://d2652gz3oy7d9s.cloudfront.net/Tap/tap1.png"
-                  src="https://d2652gz3oy7d9s.cloudfront.net/Avatar/ava.png"
+                  className="img-yoga-carousel col-start-1 row-start-1 rounded-full lg:ml-10"
+                  src="https://d2652gz3oy7d9s.cloudfront.net/Tap/tap3.jpeg"
+                  // src="https://d2652gz3oy7d9s.cloudfront.net/Avatar/ava.png"
                   alt=""
-                  style={{
-                    objectFit: "cover",
-                    objectPosition: "0 30%",
-                    height: "300px",
-                    width: "300px",
-                  }}
                 />
               </div>
             </div>

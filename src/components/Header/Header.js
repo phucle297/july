@@ -9,8 +9,6 @@ const menu = (
       <NavLink
         rel="noopener noreferrer"
         style={{
-          fontFamily: "'EB Garamond', serif",
-          fontSize: "1rem",
           fontWeight: "bold",
         }}
         to="/apartment"
@@ -22,8 +20,6 @@ const menu = (
       <NavLink
         rel="noopener noreferrer"
         style={{
-          fontFamily: "'EB Garamond', serif",
-          fontSize: "1rem",
           fontWeight: "bold",
         }}
         to="/yoga"

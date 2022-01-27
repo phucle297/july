@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +15,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "EB Garamond", serif;
+  /* font-family: "EB Garamond", serif; */
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
   color: #3f3a64;
 }
 button,
@@ -31,7 +34,11 @@ span,
 li,
 b,
 small {
-  font-family: "Be Vietnam Pro", sans-serif;
+  /* font-family: "Be Vietnam Pro", sans-serif;
+   */
+  font-size: 1.125rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
 }
 #hand-written {
   font-family: "Licorice", cursive;
@@ -49,6 +56,7 @@ svg {
 
 .button-primary,
 a.button-primary {
-  @apply text-lg font-medium flex items-center justify-center bg-green-700 hover:bg-green-800 hover:text-white  pl-6 pr-3 py-2 tracking-wide rounded-lg;
+  @apply font-semibold flex items-center justify-center bg-green-700 hover:bg-green-800 hover:text-white  pl-6 pr-3 py-2.5 rounded-lg;
   color: white !important;
+  font-size: 1.125rem;
 }
