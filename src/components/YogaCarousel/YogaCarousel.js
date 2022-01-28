@@ -4,19 +4,14 @@ import { ArrowRightOutlined } from "@ant-design/icons";
 import "./YogaCarousel.css";
 export default function YogaCarousel() {
   return (
-    <div className="yoga-carousel">
-      <div className="carousel mt-20">
+    <section className="yoga-carousel pt-28">
+      <div className="carousel">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-5">
             <div className="col-span-1 px-5 flex justify-center flex-col lg:col-span-2 mb-5 lg:mb-0">
               <div className="flex items-center justify-between mb-5">
                 <Divider orientation="left">
-                  <span
-                    className="font-bold text-5xl tracking-wide"
-                    style={{ color: "rgb(55 50 86)" }}
-                  >
-                    July Yoga
-                  </span>
+                  <span id="julyyoga">July Yoga</span>
                 </Divider>
               </div>
               <div className="">
@@ -39,7 +34,7 @@ export default function YogaCarousel() {
                 </button>
               </div>
             </div>
-            <div className="col-span-1 px-5 flex items-center flex-col lg:col-span-3">
+            <div className="col-span-1 px-5 flex items-center flex-col lg:col-span-3 mb-16 md:mb-0">
               <div className="grid grid-cols-1 place-items-center">
                 <img
                   className="pattern col-start-1 row-start-1"
@@ -57,6 +52,21 @@ export default function YogaCarousel() {
           </div>
         </div>
       </div>
-    </div>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 280"
+        className="slider__path"
+      >
+        <path fillOpacity={1}>
+          <animate
+            attributeName="d"
+            dur="20000ms"
+            repeatCount="indefinite"
+            values="M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z; M0,160L48,181.3C96,203,192,245,288,234.7C384,224,480,160,576,133.3C672,107,768,117,864,138.7C960,160,1056,192,1152,197.3C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;												 M0,64L48,74.7C96,85,192,107,288,133.3C384,160,480,192,576,170.7C672,149,768,75,864,80C960,85,1056,171,1152,181.3C1248,192,1344,128,1392,96L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;
+      M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;"
+          />
+        </path>
+      </svg>
+    </section>
   );
 }
