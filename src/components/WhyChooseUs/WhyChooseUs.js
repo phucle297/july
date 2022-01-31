@@ -3,9 +3,8 @@ import React from "react";
 import "./WhyChooseUs.css";
 export default function WhyChooseUs() {
   return (
-    <section className="trainer py-4">
+    <section className="trainer py-4 pb-10">
       <div className="container mx-auto">
-        {/* <Divider orientation="right" className=""> */}
         <div className="h-16 ml-auto md:w-1/2">
           <p
             className="lg:ml-8 md:ml-7 md:pt-12 lg:pt-20 heading"
@@ -18,7 +17,6 @@ export default function WhyChooseUs() {
             Lý do nên chọn chúng tôi
           </p>
         </div>
-        {/* </Divider> */}
         <div className="trainer-content grid grid-cols-1 md:grid-cols-2">
           <div className="col-span-1">
             <img
