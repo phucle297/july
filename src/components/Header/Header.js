@@ -20,7 +20,7 @@ window.onscroll = function (event) {
     navAntd.onmouseout = function () {
       navAntd.style.color = "black";
     };
-    headerNav.style.backgroundColor = "white";
+    if (window.innerWidth < 768) headerNav.style.backgroundColor = "white";
   } else {
     navbarFixed.classList.remove("header--sticky");
     navLinks.forEach((link) => {
@@ -120,7 +120,7 @@ function Header(props) {
           className={
             "header-nav grid mt-5 z-20 md:mt-0 grid-cols-1 md:grid-cols-5 lg:px-24 xl:px-44 place-items-center w-full" +
             (navbarOpen ? " shadow-lg rounded-b-lg " : " ") +
-            (layout&&navbarOpen ? " backdrop-blur-sm" : "")
+            (layout && navbarOpen ? " backdrop-blur-sm" : "")
           }
         >
           <NavLink to="/" className="nav-link col-span-1">

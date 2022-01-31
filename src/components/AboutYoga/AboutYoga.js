@@ -9,10 +9,7 @@ export default function AboutYoga() {
           <div className="grid grid-cols-1 md:grid-cols-2 place-items-center">
             <div className="px-4">
               <Divider orientation="left">
-                <h1
-                  className="font-bold text-4xl  my-2 mx-0"
-                  style={{ color: "rgb(55, 50, 86)" }}
-                >
+                <h1 className=" heading" style={{ color: "rgb(55, 50, 86)" }}>
                   Giới thiệu
                 </h1>
               </Divider>

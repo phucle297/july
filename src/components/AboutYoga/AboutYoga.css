@@ -1,3 +1,11 @@
-.about-yoga {
-  /* background-color: #f7f7f7; */
+.about-yoga img {
+  transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transform: translate(0, 0);
+}
+.about-yoga img:hover {
+  @apply shadow-xl;
+  transform: translate(0, -10px);
 }

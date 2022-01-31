@@ -24,11 +24,11 @@ export default function Footer() {
       } else if (window.innerWidth < 821) {
         setMapWidth(550);
         setMapHeight(250);
-      } else if (window.innerWidth < 1025) {
+      } else if (window.innerWidth < 1023) {
         setMapWidth(550);
         setMapHeight(250);
       } else {
-        setMapWidth(350);
+        setMapWidth(250);
         setMapHeight(250);
       }
     };
