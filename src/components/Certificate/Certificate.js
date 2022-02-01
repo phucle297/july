@@ -17,6 +17,7 @@ export default function Certificate() {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoPlay: true,
+    centerPadding: "10px",
   };
   const renderCer = () => {
     return arrCer.map((item, index) => {

@@ -2,11 +2,17 @@
   @apply py-5 mb-10;
 }
 .certificate .slick-dots {
+  @apply flex items-center justify-between;
   bottom: initial;
 }
-.certificate .slick-dots li {
-  margin: 0 6px;
-  margin-bottom: 10px;
+/* .slick-dots {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.slick-dots li {
+  @apply flex items-center justify-center;
+  margin: 10px 6px !important;
 }
 .slick-dots li button::before {
   border-radius: 100%;
@@ -24,10 +30,43 @@
 
 .slick-dots li button:hover::before {
   opacity: 0.8 !important;
+  width: 18px !important;
+  height: 18px !important;
+  background: #213364;
+  scale: 1.2;
 }
 
 .slick-dots .slick-active button::before {
   opacity: 1 !important;
+  width: 18px !important;
+  height: 18px !important;
+  background: #213364;
+} */
+
+div.slick-active {
+  z-index: 2;
+}
+
+.slick-dots li button::before,
+.slick-dots li button:hover::before,
+.slick-dots li button:focus::before {
+  font-size: 15px !important;
+  color: rgba(33, 51, 100, 0.4) !important;
+  opacity: 1 !important;
+  transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+}
+.slick-dots li.slick-active button::before,
+.slick-dots li:hover button::before {
+  color: #213364 !important;
+  opacity: 1 !important;
+  font-size: 18px !important;
+}
+
+.carousel__item {
+  position: relative;
 }
 
 .certificate-left {
