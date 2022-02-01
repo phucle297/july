@@ -1,0 +1,4 @@
+.stats {
+  @apply py-10;
+  background-color: #f7f7f7;
+}

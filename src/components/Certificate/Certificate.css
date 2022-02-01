@@ -1,0 +1,41 @@
+.certificate {
+  @apply py-5 mb-10;
+}
+.certificate .slick-dots {
+  bottom: initial;
+}
+.certificate .slick-dots li {
+  margin: 0 6px;
+  margin-bottom: 10px;
+}
+.slick-dots li button::before {
+  border-radius: 100%;
+  content: "" !important;
+  border: none;
+  background: #213364;
+  width: 15px !important;
+  height: 15px !important;
+  opacity: 0.5 !important;
+  transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+}
+
+.slick-dots li button:hover::before {
+  opacity: 0.8 !important;
+}
+
+.slick-dots .slick-active button::before {
+  opacity: 1 !important;
+}
+
+.certificate-left {
+  @apply mx-10 my-14;
+}
+
+@media screen and (min-width: 375px) {
+  .certificate-left {
+    @apply my-6;
+  }
+}

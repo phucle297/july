@@ -1,6 +1,6 @@
 .yoga-carousel {
-  background: url(https://d2652gz3oy7d9s.cloudfront.net/Tap/ygbaibien2.jpeg)
-    rgba(0, 0, 0, 0.6) no-repeat center center;
+  background: url(https://d2652gz3oy7d9s.cloudfront.net/Tap/bg-carousel.jpeg)
+    rgba(0, 0, 0, 0.6) no-repeat bottom center;
   background-size: cover;
   background-blend-mode: multiply;
   color: white !important;
