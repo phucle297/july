@@ -13,7 +13,7 @@ export default function Feedback() {
     {
       img: "https://picsum.photos/50?random=2",
       content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos repudiandae, molestiae minus illo sunt molestias consequuntur eligendi esse incidunt odio consequuntur eligendi esse incidunt odio!",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos repudiandae, molestiae minus illo sunt molestias consequuntur eligendi esse incidunt odio consequuntur eligendi esse incidunt",
       name: "Le Van B",
     },
     {
@@ -44,10 +44,10 @@ export default function Feedback() {
       return (
         <div className="feedback-card" key={index}>
           <div className="content">{feedback.content}</div>
-          <div className="flex flex-row items-center justify-between">
+          <div className="flex flex-row items-center justify-center mt-6 mb-4">
             <img src={feedback.img} alt="" className="rounded-full" />
-            <div className="">
-              <p className="name">{feedback.name}</p>
+            <div className=" pl-4">
+              <p className="name heading text-lg my-0">{feedback.name}</p>
               <p>Học viên</p>
             </div>
           </div>
@@ -58,9 +58,9 @@ export default function Feedback() {
   return (
     <section className="feedback">
       <div className="container mx-auto">
-        <div className="text-center">
-          <h3 className="heading">Phản hồi của học viên</h3>
-          <div >
+        <div className="text-center ">
+          <h3 className="heading mb-8">Phản hồi của học viên</h3>
+          <div className="feedback-detail">
             <Slider {...settings}>{renderFeedback()}</Slider>
           </div>
         </div>
