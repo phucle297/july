@@ -49,7 +49,7 @@ export default function Certificate() {
             </Slider>
           </div>
           <ul className="certificate-right" data-aos="fade-up">
-            <li className="my-5 text-justify">
+            <li className="mt-5 mb-1 text-justify">
               <i className="fas fa-dot-circle text-green-700 text-xs ml-0"></i>
               Chứng nhận 200H Hatha Yoga US Yoga Alliance
             </li>
