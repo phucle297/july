@@ -6,6 +6,7 @@ import Header from "../components/Header/Header";
 import { DONE_LOADING, START_LOADING } from "../redux/types/LoadingType";
 
 export default function HomeTemplate(props) {
+  window.scrollTo(0, 0);
   const dispatch = useDispatch();
   useEffect(() => {
     window.scrollTo(0, 0);

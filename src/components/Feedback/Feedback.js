@@ -58,9 +58,15 @@ export default function Feedback() {
   return (
     <section className="feedback">
       <div className="container mx-auto">
-        <div className="text-center ">
-          <h3 className="heading mb-8">Phản hồi của học viên</h3>
-          <div className="feedback-detail">
+        <div className="text-center">
+          <h3 className="heading mb-8" data-aos="fade-down">
+            Phản hồi của học viên
+          </h3>
+          <div
+            className="feedback-detail"
+            data-aos="fade-down"
+            data-aos-delay="400"
+          >
             <Slider {...settings}>{renderFeedback()}</Slider>
           </div>
         </div>

@@ -36,14 +36,19 @@ export default function Certificate() {
   return (
     <section className="certificate">
       <div className="container mx-auto">
-        <h1 className="heading text-center">Trình độ - Chứng chỉ</h1>
+        <h1 className="heading text-center" data-aos="fade-down">
+          Trình độ - Chứng chỉ
+        </h1>
         <div className=" grid grid-cols-1 md:grid-cols-2">
-          <div className="certificate-left place-items-center">
+          <div
+            className="certificate-left place-items-center"
+            data-aos="zoom-out"
+          >
             <Slider {...settings} className="col-span-1">
               {renderCer()}
             </Slider>
           </div>
-          <ul className="certificate-right">
+          <ul className="certificate-right" data-aos="fade-up">
             <li className="my-5 text-justify">
               <i className="fas fa-dot-circle text-green-700 text-xs ml-0"></i>
               Chứng nhận 200H Hatha Yoga US Yoga Alliance

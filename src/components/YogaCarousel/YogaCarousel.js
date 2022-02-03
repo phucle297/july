@@ -9,19 +9,27 @@ export default function YogaCarousel() {
         <div className="container mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-5">
             <div className="col-span-1 px-5 flex justify-center flex-col lg:col-span-2 mb-5 lg:mb-0">
-              <div className="flex items-center justify-between mb-5">
+              <div
+                className="flex items-center justify-between mb-5"
+                data-aos="fade-down"
+                data-aos-delay="1200"
+              >
                 <Divider orientation="left">
                   <span id="julyyoga">July Yoga</span>
                 </Divider>
               </div>
-              <div className="">
+              <div data-aos="fade-down" data-aos-delay="1400">
                 <p className=" text-justify">
                   JULY YOGA do Trần Thị Đức Hạnh thành lập vào ngày 10/09/2018.
                   Chuyên đào tạo về Hatha yoga, yoga phục hồi trị liệu, yoga
                   nâng cao Vinyasa, Ashtanga, Yin yoga và thiền.
                 </p>
               </div>
-              <div className="mt-5 flex items-center justify-start">
+              <div
+                className="mt-5 flex items-center justify-start"
+                data-aos="fade-down"
+                data-aos-delay="1600"
+              >
                 <a
                   href="mailto:julygroups53@gmail.com"
                   className="button-primary"
@@ -34,7 +42,11 @@ export default function YogaCarousel() {
                 </button>
               </div>
             </div>
-            <div className="col-span-1 px-5 flex items-center flex-col lg:col-span-3 mb-16 md:mb-0">
+            <div
+              className="col-span-1 px-5 flex items-center flex-col lg:col-span-3 mb-16 md:mb-0"
+              data-aos="fade-down"
+              data-aos-delay="1600"
+            >
               <div className="grid grid-cols-1 place-items-center">
                 <img
                   className="pattern col-start-1 row-start-1"
