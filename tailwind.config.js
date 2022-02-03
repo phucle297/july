@@ -279,7 +279,7 @@ module.exports = {
       "nesw-resize": "nesw-resize",
       "nwse-resize": "nwse-resize",
       "zoom-in": "zoom-in",
-      "zoom-out": "zoom-out",
+      "zoom-in": "zoom-in",
     },
     divideColor: ({ theme }) => theme("borderColor"),
     divideOpacity: ({ theme }) => theme("borderOpacity"),

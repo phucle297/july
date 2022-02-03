@@ -42,7 +42,7 @@ export default function Certificate() {
         <div className=" grid grid-cols-1 md:grid-cols-2">
           <div
             className="certificate-left place-items-center"
-            data-aos="zoom-out"
+            data-aos="zoom-in"
           >
             <Slider {...settings} className="col-span-1">
               {renderCer()}

@@ -25,7 +25,7 @@ export default function WhyChooseUs() {
               alt=""
               data-aos="zoom-in"
             />
-            <div className="card-1" data-aos="zoom-in-right">
+            <div className="card-1" data-aos="zoom-in">
               <h3>Huấn luyện viên nhiều kinh nghiệm</h3>
               <p>
                 Bạn sẽ được hướng dẫn bởi huấn luyện viên có hơn 7000 giờ giảng
@@ -34,7 +34,7 @@ export default function WhyChooseUs() {
             </div>
           </div>
           <div className="col-span-1">
-            <div className="card-2" data-aos="zoom-in-left">
+            <div className="card-2" data-aos="zoom-in">
               <h3>Không gian tập luyện thoải mái</h3>
               <p>
                 Phòng tập trang bị đầy đủ dụng cụ hỗ trợ cho việc tập luyện

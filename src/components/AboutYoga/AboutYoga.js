@@ -19,7 +19,7 @@ export default function AboutYoga() {
               </Divider>
               <p
                 className="my-1 text-justify"
-                data-aos="zoom-in-right"
+                data-aos="zoom-in"
                 data-aos-delay="100"
               >
                 <i className="fas fa-dot-circle text-green-700 text-xs ml-0"></i>
@@ -28,7 +28,7 @@ export default function AboutYoga() {
               </p>
               <p
                 className="my-1 text-justify"
-                data-aos="zoom-in-right"
+                data-aos="zoom-in"
                 data-aos-delay="200"
               >
                 <i className="fas fa-dot-circle text-green-700 text-xs ml-0"></i>
@@ -37,7 +37,7 @@ export default function AboutYoga() {
               </p>
               <p
                 className="my-1 text-justify"
-                data-aos="zoom-in-right"
+                data-aos="zoom-in"
                 data-aos-delay="300"
               >
                 <i className="fas fa-dot-circle text-green-700 text-xs ml-0"></i>
@@ -46,7 +46,7 @@ export default function AboutYoga() {
               </p>
               <p
                 className="my-1 text-justify"
-                data-aos="zoom-in-right"
+                data-aos="zoom-in"
                 data-aos-delay="400"
               >
                 <i className="fas fa-dot-circle text-green-700 text-xs ml-0"></i>

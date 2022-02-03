@@ -4,7 +4,7 @@ import VisibilitySensor from "react-visibility-sensor";
 import "./Statistics.css";
 export default function Statistics() {
   return (
-    <section className="stats" data-aos="zoom-out">
+    <section className="stats" data-aos="zoom-in">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3">
           <div className="col-span-1 my-2 text-center">
