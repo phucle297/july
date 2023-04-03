@@ -108,7 +108,7 @@
   }
 }
 #julyyoga {
-  @apply font-bold text-5xl tracking-wide;
+  @apply text-5xl font-bold tracking-wide;
   color: "rgb(55 50 86)";
 }
 @media screen and (min-width: 375px) {

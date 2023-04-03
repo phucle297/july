@@ -1,0 +1,5 @@
+.slider__path {
+  margin-bottom: -10px !important;
+  z-index: 110;
+  position: relative;
+}

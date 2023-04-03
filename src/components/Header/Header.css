@@ -1,5 +1,6 @@
 .header {
-  @apply fixed inset-0 h-20 w-full z-10;
+  @apply fixed inset-0 z-10 w-full h-20;
+  z-index: 1000;
   background-color: transparent;
   border-bottom: 1px solid rgba(231, 231, 231, 0.18);
 }
@@ -9,7 +10,7 @@
 }
 
 .header #logo {
-  @apply mt-4 fixed;
+  @apply fixed mt-4;
   top: 0;
   left: 50%;
   transform: translate(-50%, 0%);

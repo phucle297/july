@@ -1,7 +1,6 @@
-import React, { Fragment, memo, useEffect } from "react";
+import React, { Fragment, memo } from "react";
 import Slider from "react-slick";
 import "./Carousel.css";
-import { useDispatch, useSelector } from "react-redux";
 
 const PrevArrow = (props) => {
   const { onClick } = props;
@@ -25,11 +24,11 @@ function Carousel(props) {
   // const { arrBanner } = useSelector((state) => state.FilmReducer);
   // const dispatch = useDispatch();
   const arrImg = [];
-  const renderCarousel = () => {
+  const ContentCarousel = () => {
     return arrImg.map((film, index) => {
       return (
         <div
-          className="carousel__item cursor-pointer"
+          className="cursor-pointer carousel__item"
           onClick={async () => {}}
           key={index}
         >
@@ -65,7 +64,7 @@ function Carousel(props) {
   return (
     <Fragment>
       <div className="h-96"></div>
-      <Slider {...settings}>{renderCarousel()}</Slider>
+      <Slider {...settings}>{<ContentCarousel />}</Slider>
     </Fragment>
   );
 }

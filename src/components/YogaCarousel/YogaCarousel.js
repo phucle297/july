@@ -8,7 +8,7 @@ export default function YogaCarousel() {
       <div className="carousel">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-5">
-            <div className="col-span-1 px-5 flex justify-center flex-col lg:col-span-2 mb-5 lg:mb-0">
+            <div className="flex flex-col justify-center col-span-1 px-5 mb-5 lg:col-span-2 lg:mb-0">
               <div
                 className="flex items-center justify-between mb-5"
                 data-aos="fade-down"
@@ -19,14 +19,14 @@ export default function YogaCarousel() {
                 </Divider>
               </div>
               <div data-aos="fade-down" data-aos-delay="1400">
-                <p className=" text-justify">
+                <p className="text-justify ">
                   JULY YOGA do Trần Thị Đức Hạnh thành lập vào ngày 10/09/2018.
                   Chuyên đào tạo về Hatha yoga, yoga phục hồi trị liệu, yoga
                   nâng cao Vinyasa, Ashtanga, Yin yoga và thiền.
                 </p>
               </div>
               <div
-                className="mt-5 flex items-center justify-start"
+                className="flex items-center justify-start mt-5"
                 data-aos="fade-down"
                 data-aos-delay="1600"
               >
@@ -37,25 +37,25 @@ export default function YogaCarousel() {
                   Liên hệ
                   <ArrowRightOutlined className="mr-0" />
                 </a>
-                <button className="media-play-icon ml-10">
+                <button className="ml-10 media-play-icon">
                   <i className="fas fa-play media-icon"></i>
                 </button>
               </div>
             </div>
             <div
-              className="col-span-1 px-5 flex items-center flex-col lg:col-span-3 mb-16 md:mb-0"
+              className="flex flex-col items-center col-span-1 px-5 mb-16 lg:col-span-3 md:mb-0"
               data-aos="fade-down"
               data-aos-delay="1600"
             >
               <div className="grid grid-cols-1 place-items-center">
                 <img
-                  className="pattern col-start-1 row-start-1"
-                  src="https://d2652gz3oy7d9s.cloudfront.net/Layout/pattern.png"
+                  className="col-start-1 row-start-1 pattern"
+                  src="/images/pattern.png"
                   alt=""
                 />
                 <img
-                  className="img-yoga-carousel col-start-1 row-start-1 rounded-full lg:ml-10"
-                  src="https://d2652gz3oy7d9s.cloudfront.net/Tap/tap3.jpeg"
+                  className="col-start-1 row-start-1 rounded-full img-yoga-carousel lg:ml-10"
+                  src="/images/tap3.jpeg"
                   // src="https://d2652gz3oy7d9s.cloudfront.net/Avatar/ava.png"
                   alt=""
                 />

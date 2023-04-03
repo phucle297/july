@@ -3,7 +3,7 @@ import React from "react";
 import "./WhyChooseUs.css";
 export default function WhyChooseUs() {
   return (
-    <section className="trainer py-4 pb-10">
+    <section className="py-4 pb-10 trainer">
       <div className="container mx-auto">
         <div className="h-16 ml-auto md:w-1/2" data-aos="fade-up">
           <p
@@ -17,11 +17,11 @@ export default function WhyChooseUs() {
             Lý do nên chọn chúng tôi
           </p>
         </div>
-        <div className="trainer-content grid grid-cols-1 md:grid-cols-2">
+        <div className="grid grid-cols-1 trainer-content md:grid-cols-2">
           <div className="col-span-1">
             <img
               className="rounded-lg"
-              src="https://d2652gz3oy7d9s.cloudfront.net/Tap/tap4.jpeg"
+              src="/images/tap4.jpeg"
               alt=""
               data-aos="zoom-in"
             />

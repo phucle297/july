@@ -53,24 +53,24 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-6">
-          <div className="col-span-1 flex flex-col md:px-10 md:col-span-2 lg:px-4 lg:col-span-1">
+        <div className="grid grid-cols-1 py-6 md:grid-cols-2 lg:grid-cols-4">
+          <div className="flex flex-col col-span-1 md:px-10 md:col-span-2 lg:px-4 lg:col-span-1">
             <img
-              src="https://d2652gz3oy7d9s.cloudfront.net/Logo/julywhite.png"
+              src="/images/julywhite.png"
               width={180}
-              className=" self-center mb-5"
+              className="self-center my-auto "
               alt=""
             />
-            <p className="text-white px-8 lg:px-7 text-center">
+            {/* <p className="px-8 text-center text-white lg:px-7">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Voluptates, error ipsum, dolor possimus totam repudiandae adipisci
-            </p>
+            </p> */}
           </div>
           <div className="col-span-1 mt-6 px-7 lg:px-1 lg:mt-9">
-            <h3 className="text-3xl font-bold text-white text-center h-12 lg:h-14 lg:mt-4">
+            <h3 className="h-12 text-3xl font-bold text-center text-white lg:h-14 lg:mt-4">
               Sản phẩm
             </h3>
-            <div className="flex flex-col lg:pl-12 xl:pl-20 items-center justify-center lg:items-start">
+            <div className="flex flex-col items-center justify-center lg:pl-12 xl:pl-20 lg:items-start">
               <NavLink to="/apartment" className="footer-nav-link">
                 Căn hộ cho thuê
               </NavLink>
@@ -80,7 +80,7 @@ export default function Footer() {
             </div>
           </div>
           <div className="col-span-1 mt-6 md:px-7 lg:px-1 lg:mt-9">
-            <h3 className="text-3xl font-bold text-white text-center h-12 lg:h-14 lg:mt-4">
+            <h3 className="h-12 text-3xl font-bold text-center text-white lg:h-14 lg:mt-4">
               Liên hệ
             </h3>
             <div className="flex items-center justify-center">
@@ -110,7 +110,7 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <div className="col-span-1 md:mt-4 lg:px-4 lg:mt-9 flex items-center justify-center md:col-span-2 lg:col-span-1">
+          <div className="flex items-center justify-center col-span-1 md:mt-4 lg:px-4 lg:mt-9 md:col-span-2 lg:col-span-1">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3834.4464363169122!2d108.21556285016807!3d16.042306844366102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314219c1da813283%3A0x99c1b65dfacc9083!2zNTMgxJAuIEzDqiBUaGFuaCBOZ2jhu4ssIEhvw6AgQ8aw4budbmcgQuG6r2MsIEjhuqNpIENow6J1LCDEkMOgIE7hurVuZyA1NTAwMDAsIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1642917168170!5m2!1sen!2s"
               width={mapWidth}

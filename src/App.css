@@ -9,6 +9,9 @@
   box-sizing: border-box;
   font-size: 0.95rem;
 }
+html{
+  scroll-behavior: smooth;
+}
 h1,
 h2,
 h3,
@@ -51,7 +54,7 @@ a:active {
 
 i,
 svg {
-  @apply mx-2 text-white text-lg;
+  @apply mx-2 text-lg text-white;
 }
 
 .button-primary,
@@ -62,7 +65,7 @@ a.button-primary {
 }
 
 .heading {
-  @apply font-bold text-5xl mt-8 mb-5 mx-0;
+  @apply mx-0 mt-8 mb-5 text-5xl font-bold;
 }
 
 body {

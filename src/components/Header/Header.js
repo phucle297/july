@@ -37,43 +37,48 @@ window.onscroll = function (event) {
   }
 };
 
-const menu = (
-  <Menu
-    style={{
-      backgroundColor: "white",
-      borderRadius: "6px",
-      padding: "10px 3px",
-    }}
-  >
-    <Menu.Item key="0">
-      <NavLink
-        rel="noopener noreferrer"
-        style={{
-          fontWeight: "bold",
-          borderRadius: "10px",
-        }}
-        to="/apartment"
-      >
-        Căn hộ cho thuê
-      </NavLink>
-    </Menu.Item>
-    <Menu.Item key="1">
-      <NavLink
-        rel="noopener noreferrer"
-        style={{
-          fontWeight: "bold",
-        }}
-        to="/yoga"
-      >
-        Yoga
-      </NavLink>
-    </Menu.Item>
-  </Menu>
-);
-
 function Header(props) {
   const [navbarOpen, setNavbarOpen] = useState(false);
   const [layout, setLayout] = useState(window.innerWidth < 768 ? true : false);
+  const menu = (
+    <Menu
+      style={{
+        backgroundColor: "white",
+        borderRadius: "6px",
+        padding: "10px 3px",
+      }}
+    >
+      <Menu.Item key="0">
+        <NavLink
+          rel="noopener noreferrer"
+          style={{
+            fontWeight: "bold",
+            borderRadius: "10px",
+          }}
+          to="/apartment"
+          onClick={() => {
+            setLayout(false);
+          }}
+        >
+          Căn hộ cho thuê
+        </NavLink>
+      </Menu.Item>
+      <Menu.Item key="1">
+        <NavLink
+          rel="noopener noreferrer"
+          style={{
+            fontWeight: "bold",
+          }}
+          to="/yoga"
+          onClick={() => {
+            setLayout(false);
+          }}
+        >
+          Yoga
+        </NavLink>
+      </Menu.Item>
+    </Menu>
+  );
   useEffect(() => {
     window.onload = () => {
       setNavbarOpen(false);
@@ -86,15 +91,22 @@ function Header(props) {
   }, [navbarOpen, layout]);
   return (
     <header className={"header py-5 transition-all duration-300 ease-out "}>
-      <NavLink to="/" id="logo" className=" left-16 md:left-1/2">
-        <img src="https://d2652gz3oy7d9s.cloudfront.net/Logo/july.png" alt="" />
+      <NavLink
+        to="/"
+        id="logo"
+        className=" left-16 md:left-1/2"
+        onClick={() => {
+          setNavbarOpen(false);
+        }}
+      >
+        <img src="/images/july.png" alt="" />
       </NavLink>
       <div
         className="relative flex justify-end md:w-auto md:static md:block md:justify-start"
         style={navbarOpen ? { flexBasis: "60vw" } : {}}
       >
         <button
-          className="text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block md:hidden outline-none focus:outline-none"
+          className="block px-3 py-1 text-xl leading-none text-white bg-transparent border border-transparent border-solid rounded outline-none cursor-pointer md:hidden focus:outline-none"
           type="button"
           onClick={() => setNavbarOpen(!navbarOpen)}
         >
@@ -123,12 +135,30 @@ function Header(props) {
             (layout && navbarOpen ? " backdrop-blur-sm" : "")
           }
         >
-          <NavLink to="/" className="nav-link col-span-1">
+          <NavLink
+            to={"/"}
+            className="col-span-1 nav-link "
+            onClick={() => {
+              setNavbarOpen(false);
+            }}
+          >
             Trang chủ
           </NavLink>
-          <a className="nav-link col-span-1">Về chúng tôi</a>
-          <a className=" col-span-1"></a>
-          <Space direction="vertical" className=" col-span-1">
+          <a
+            className="col-span-1 nav-link"
+            onClick={() => {
+              setNavbarOpen(false);
+            }}
+          >
+            Về chúng tôi
+          </a>
+          <a
+            className="col-span-1 "
+            onClick={() => {
+              setNavbarOpen(false);
+            }}
+          ></a>
+          <Space direction="vertical" className="col-span-1 ">
             <Space wrap>
               <Dropdown
                 overlay={menu}
@@ -136,11 +166,25 @@ function Header(props) {
                 // trigger={["click"]}
                 arrow={["true"]}
               >
-                <a className=" nav-link-ant">Dịch vụ</a>
+                <a
+                  className=" nav-link-ant"
+                  onClick={() => {
+                    setNavbarOpen(false);
+                  }}
+                >
+                  Dịch vụ
+                </a>
               </Dropdown>
             </Space>
           </Space>
-          <a className="nav-link col-span-1">Liên hệ</a>
+          <a
+            className="col-span-1 nav-link"
+            onClick={() => {
+              setNavbarOpen(false);
+            }}
+          >
+            Liên hệ
+          </a>
         </nav>
       </div>
     </header>
