@@ -1,12 +1,13 @@
-import React, { useEffect } from "react";
-import "./Footer.css";
 import {
-  PhoneOutlined,
+  ClockCircleOutlined,
   HomeOutlined,
   MailOutlined,
-  ClockCircleOutlined,
+  PhoneOutlined,
 } from "@ant-design/icons";
+import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
+import "./Footer.css";
+
 export default function Footer() {
   const [mapWidth, setMapWidth] = React.useState(350);
   const [mapHeight, setMapHeight] = React.useState(180);
@@ -61,10 +62,16 @@ export default function Footer() {
               className="self-center my-auto "
               alt=""
             />
-            {/* <p className="px-8 text-center text-white lg:px-7">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Voluptates, error ipsum, dolor possimus totam repudiandae adipisci
-            </p> */}
+            {/* <Input.Group compact>
+              <Input
+                style={{ width: "calc(100% - 100px)" }}
+                defaultValue="https://ant.design"
+              />
+              <Button type="primary">Submit</Button>
+            </Input.Group> */}
+            <p className="px-8 text-center text-white lg:px-7">
+              July Group cung cấp dịch vụ cho thuê căn hộ và dạy học yoga với những sản phẩm tốt đi kèm giá cả hợp lý
+            </p>
           </div>
           <div className="col-span-1 mt-6 px-7 lg:px-1 lg:mt-9">
             <h3 className="h-12 text-3xl font-bold text-center text-white lg:h-14 lg:mt-4">
