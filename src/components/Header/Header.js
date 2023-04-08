@@ -149,6 +149,7 @@ function Header(props) {
             onClick={() => {
               setNavbarOpen(false);
             }}
+            href="#about"
           >
             Về chúng tôi
           </a>
@@ -182,6 +183,7 @@ function Header(props) {
             onClick={() => {
               setNavbarOpen(false);
             }}
+            href="#contact"
           >
             Liên hệ
           </a>

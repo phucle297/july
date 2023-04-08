@@ -3,7 +3,7 @@ import React from "react";
 import "./AboutYoga.css";
 export default function AboutYoga() {
   return (
-    <div className="py-8 my-5 about-yoga">
+    <div className="py-8 my-5 about-yoga" id = "about">
       <div className="container mx-auto">
         <div className="mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 place-items-center">

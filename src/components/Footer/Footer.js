@@ -52,7 +52,7 @@ export default function Footer() {
     };
   }, [mapWidth, mapHeight]);
   return (
-    <footer className="footer">
+    <footer className="footer" id="contact">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 py-6 md:grid-cols-2 lg:grid-cols-4">
           <div className="flex flex-col col-span-1 md:px-10 md:col-span-2 lg:px-4 lg:col-span-1">
@@ -70,7 +70,8 @@ export default function Footer() {
               <Button type="primary">Submit</Button>
             </Input.Group> */}
             <p className="px-8 text-center text-white lg:px-7">
-              July Group cung cấp dịch vụ cho thuê căn hộ và dạy học yoga với những sản phẩm tốt đi kèm giá cả hợp lý
+              July Group cung cấp dịch vụ cho thuê căn hộ và dạy học yoga với
+              những sản phẩm tốt đi kèm giá cả hợp lý
             </p>
           </div>
           <div className="col-span-1 mt-6 px-7 lg:px-1 lg:mt-9">
