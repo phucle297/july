@@ -4,7 +4,13 @@ import { ArrowRightOutlined } from "@ant-design/icons";
 import "./YogaCarousel.css";
 export default function YogaCarousel() {
   return (
-    <section className="yoga-carousel pt-28">
+    <section
+      className="yoga-carousel pt-28"
+      style={{
+        background: `url(/images/bg-carousel.jpeg) no-repeat bottom center / cover,
+        rgba(0, 0, 0, 0.6) no-repeat bottom center`,
+      }}
+    >
       <div className="carousel">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-5">
